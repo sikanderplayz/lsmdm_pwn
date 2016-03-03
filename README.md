@@ -2,5 +2,6 @@
 
 A program to escalate permissions on com.lsmdm.*
 
-> poc:
+> PoC:
+>  
 > ![image.jpeg](image.jpeg)
