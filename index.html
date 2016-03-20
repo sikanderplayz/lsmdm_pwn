@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LSMDM_pwn Writeup</title>
+    <style>
+      body {
+        margin-right: 80px;
+        margin-left: 80px;
+      }
+		</style>
+  </head>
+  <body>
+    <h1>LSMDM_pwn Writeup</h1>
+    <hr>
+    <h4>Introduction</h4>
+    <p>Alright. A while ago, on 3/7/16, I decided to create a program that would remove an Mobile Device Management service from an iPad, or escalate local permissions. I named off of my school's MDM server: "Lightsteed MDM Services" or LSMDM for short. I created this tool as a personal tool, and not as one to be used illegally. Although I named it afrer a functioning and active MDM server, I'm not going to use it for illegal purposes, and neither should you. I will not be held responsible for any outcomes of anyone who uses this service.</p>
+    <hr> <!-- End Intro  -->
+
+    <h4>Sun. Mar 20, 2016:</h4>
+    <p>Originally I decided to attempt to make it all mobile. Change the Time/Date settings to invalidate the certificates, and maybe allow it to open itself to a deletion option. Several things came from that operation:</p>
+    <ul>
+      <li>The certificates would turn red, meaning they were invalidated, but an extra third certificate, to be distributed later, is required to remove the MDM profile.</li>
+      <li>Another exploiter, to remain unnamed, succeeded in recieving this third certificate. All the iPad required to delete LSMDM was the iPad's passcode. However, the <code>"CheckOutWhenRemoved"</code> parameter was set to <code>"true"</code> in the <code>PostSetupProfile.mobileconfig</code> file, so it alerted the system, and the iPad was shut down until the profile was re-installed.</li>
+    </ul>
+    <p>After that, I knew the only way around was to modify the <code>MobileConfiguration</code> files on the iPad, in such a way that it didn't set off that <code>"CheckOutWhenRemoved"</code> tripwire. I backed up my iPad and started examining the files, to find the directory I wanted. The files are very repetitive (And very long too) and weren't fun to read.</p>
+    <p>Eventually, using a well known, and also undiclosed method, I gained access to the MobileConfiguration directory on my iPad Air 2 (iPad5,3_9.2.1_13D20). And I started messing with various files, making sure to set the <code>"CheckOutWhenRemoved"</code> and <code>"ProfileWasLocked"</code> parameters to False. And after that, I could manually delete it with ease. Without tripping any wires.</p>
+    <p>I am currently writing scripts, to eventually turn into an application to automate this process. Can't give an ETA yet. I'll update this page with any news I may find.</p>
+
+    <hr> <!-- End Entries -->
+
+    <h4><code>/MobileConfiguration/</code> Filesystem (As it is on my iPad.)</h4>
+    <ul>
+      <li><code>/PublicInfo/</code></li>
+      <ul>
+        <li><code>MCMeta.plist</code></li>
+        <li><code>PublicEffectiveUserSettings.plist</code></li>
+        <li><code>Truth.plist</code></li>
+      </ul>
+      <li><code>AppAccessibilityParameters.plist</code></li>
+      <li><code>ClientTruth.plist</code></li>
+      <li><code>CloudConfigurationDetails.plist</code></li>
+      <li><code>EffectiveUsersettings.plist</code></li>
+      <li><code>LockdownParameters.plist</code></li>
+      <li><code>MDM.plist</code></li>
+      <li><code>MDMAppManagement.plist</code></li>
+      <li><code>PayloadDependecy.plist</code></li>
+      <li><code>PayloadManifest.plist</code></li>
+      <li><code>PostSetupProfile.mobileconfig</code></li>
+      <li><code>profile-[RandomHexString].stub</code> (There may be more than one of these. For me there was three.)</li>
+      <li><code>ProfileTruth.plist</code></li>
+      <li><code>Usersettings.plist</code></li>
+    </ul>
+    <hr> <!-- End FileSystem -->
+
+    <h4>Downloads:</h4>
+    <p>Mac: <u>Not available yet.</u></p>
+    <p>Windows: <u>Not available yet.</u></p>
+    <hr>
+
+    <footer>"LSMDM_pwn" (c) 2016 Andrew 'August712' Augustine</footer>
+  </body>
+</html>
