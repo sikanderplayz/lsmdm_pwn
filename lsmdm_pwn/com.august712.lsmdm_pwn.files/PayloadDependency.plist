@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ManagedProfileToManagingProfile</key>
+	<dict>
+		<key>com.lsmdm.payload.connectivity.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</key>
+		<array>
+			<string>com.lsmdm.profile.mdm</string>
+		</array>
+		<key>com.lsmdm.payload.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</key>
+		<array>
+			<string>com.lsmdm.profile.mdm</string>
+		</array>
+	</dict>
+	<key>ManagingProfileToManagedProfile</key>
+	<dict>
+		<key>com.lsmdm.profile.mdm</key>
+		<array>
+			<string>com.lsmdm.payload.connectivity.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</string>
+			<string>com.lsmdm.payload.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</string>
+		</array>
+	</dict>
+	<key>PayloadDependencyDomainCertificate</key>
+	<dict>
+		<key>69646e740000000000000005</key>
+		<array>
+			<string>c217df80-12dd-4771-ade8-f37f85061830</string>
+			<string>ffeaa2be-fb0d-47c7-9c7e-1f21cf497205</string>
+		</array>
+	</dict>
+	<key>PayloadDependencyDomainCertificateInv</key>
+	<dict>
+		<key>c217df80-12dd-4771-ade8-f37f85061830</key>
+		<array>
+			<string>69646e740000000000000005</string>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,8 +1,7 @@
 # lsmdm_pwn
 
-A program to escalate permissions on com.lsmdm.*
+A program to escalate permissions on com.lsmdm.* (or eradicate it completely!)
 
-> PoC:
->  
-> ![image.jpeg](image.jpeg)
-> (obviously I edited the two images together, but nothing's altered.)
+Uses a modified partial restore containing the ~/MobileConfiguration/ directory.
+
+> I had a PoC, but I completely ignored it and went down a completely different route. ;/

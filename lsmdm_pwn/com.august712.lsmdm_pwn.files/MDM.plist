@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AccessRights</key>
+	<integer>8191</integer>
+	<key>CheckInURL</key>
+	<string>https://devices.dankmemes.com/kekmegoodly</string>
+	<key>IdentityPersistentRef</key>
+	<data>
+	aWRudAAAAAAAAAAF
+	</data>
+	<key>LastPushTokenHash</key>
+	<data>
+	82ml+3nzdImGE0yua3/NM4Acixo=
+	</data>
+	<key>ManagingProfileIdentifier</key>
+	<string>com.lsmdm.profile.mdm</string>
+	<key>PushMagic</key>
+	<string>CF990FF7-C629-476D-853F-BF2B5AF22CAD</string>
+	<key>ServerURL</key>
+	<string>https://devices.lsmdm.com/hellodarkness</string>
+	<key>SignMessage</key>
+	<false/>
+	<key>Topic</key>
+	<string>com.apple.mgmt.External.d23a09f4-b241-445d-adb6-48cf40b36a00</string>
+	<key>UseDevelopmentAPNS</key>
+	<false/>
+</dict>
+</plist>

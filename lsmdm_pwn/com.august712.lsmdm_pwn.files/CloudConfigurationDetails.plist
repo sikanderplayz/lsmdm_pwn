@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowPairing</key>
+	<true/>
+	<key>CloudConfigurationUIComplete</key>
+	<true/>
+	<key>ConfigurationSource</key>
+	<integer>1</integer>
+	<key>ConfigurationURL</key>
+	<string>https://devices.lsmdm.com/dep/o-4e32</string>
+	<key>ConfigurationWasApplied</key>
+	<true/>
+	<key>IsMDMUnremovable</key>
+	<true/>
+	<key>IsMandatory</key>
+	<true/>
+	<key>IsSupervised</key>
+	<true/>
+	<key>OrganizationAddress</key>
+	<string>5100 Terrebone Drive , TALLAHASSEE, FL, 32311 (USA)</string>
+	<key>OrganizationDepartment</key>
+	<string>John Paul II Catholic High School District</string>
+	<key>OrganizationEmail</key>
+	<string>technology@jpiichs.org</string>
+	<key>OrganizationMagic</key>
+	<string>device_management</string>
+	<key>OrganizationName</key>
+	<string>DIOCESE OF PENSACOLA-TALLAHASSEE</string>
+	<key>OrganizationPhone</key>
+	<string>850-201-5744 </string>
+	<key>PostSetupProfileWasInstalled</key>
+	<true/>
+	<key>SkipSetup</key>
+	<array/>
+</dict>
+</plist>

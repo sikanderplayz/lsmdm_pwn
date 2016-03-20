@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HiddenProfiles</key>
+	<array/>
+	<key>OrderedProfiles</key>
+	<array>
+		<string>com.lsmdm.profile.mdm</string>
+		<string>com.lsmdm.payload.connectivity.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</string>
+		<string>com.lsmdm.payload.d29cdc8c91abd2c7b83d47dff03fd634d77c7582</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>metadataByBundleID</key>
+	<dict>
+		<key>com.ebay.redlaserproper</key>
+		<dict>
+			<key>Attributes</key>
+			<dict/>
+			<key>flags</key>
+			<integer>1</integer>
+			<key>iTunesStoreID</key>
+			<integer>474902001</integer>
+			<key>state</key>
+			<integer>7</integer>
+			<key>title</key>
+			<string>RedLaser</string>
+		</dict>
+		<key>com.pearson.pss.studentapp</key>
+		<dict>
+			<key>Attributes</key>
+			<dict/>
+			<key>flags</key>
+			<integer>1</integer>
+			<key>iTunesStoreID</key>
+			<integer>444984364</integer>
+			<key>state</key>
+			<integer>7</integer>
+			<key>title</key>
+			<string>PowerSchool</string>
+		</dict>
+		<key>tv.lifechurch.bible</key>
+		<dict>
+			<key>Attributes</key>
+			<dict/>
+			<key>flags</key>
+			<integer>1</integer>
+			<key>iTunesStoreID</key>
+			<integer>282935706</integer>
+			<key>state</key>
+			<integer>7</integer>
+			<key>title</key>
+			<string>Bible</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
