@@ -2,21 +2,22 @@
 <html>
   <head>
     <title>LSMDM_pwn Writeup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
-        margin-right: 80px;
-        margin-left: 80px;
+        margin-right: 40px;
+        margin-left: 40px;
       }
-		</style>
+	</style>
   </head>
   <body>
-    <h1>LSMDM_pwn Writeup</h1>
+    <h1 id="top">LSMDM_pwn Writeup</h1>
     <hr>
     <h4>Introduction</h4>
-    <p>Alright. A while ago, on 3/7/16, I decided to create a program that would remove an Mobile Device Management service from an iPad, or escalate local permissions. I named off of my school's MDM server: "Lightsteed MDM Services" or LSMDM for short. I created this tool as a personal tool, and not as one to be used illegally. Although I named it afrer a functioning and active MDM server, I'm not going to use it for illegal purposes, and neither should you. I will not be held responsible for any outcomes of anyone who uses this service.</p>
+    <p>Alright. A while ago, on 3/7/16, I decided to create a program that would remove an Mobile Device Management service from an iPad, or escalate local permissions. I named off of my school's MDM server: "Lightsteed MDM Services" or LSMDM for short. I created this tool as a personal tool, and not as one to be used illegally. Although I named it after a functioning and active MDM server, I'm not going to use it for illegal purposes, and neither should you. I will not be held responsible for any outcomes of anyone who uses this service.</p>
     <hr> <!-- End Intro  -->
 
-    <h4>Sun. Mar 20, 2016:</h4>
+    <h4 id="entries">Sun. Mar 20, 2016:</h4>
     <p>Originally I decided to attempt to make it all mobile. Change the Time/Date settings to invalidate the certificates, and maybe allow it to open itself to a deletion option. Several things came from that operation:</p>
     <ul>
       <li>The certificates would turn red, meaning they were invalidated, but an extra third certificate, to be distributed later, is required to remove the MDM profile.</li>
@@ -25,10 +26,14 @@
     <p>After that, I knew the only way around was to modify the <code>MobileConfiguration</code> files on the iPad, in such a way that it didn't set off that <code>"CheckOutWhenRemoved"</code> tripwire. I backed up my iPad and started examining the files, to find the directory I wanted. The files are very repetitive (And very long too) and weren't fun to read.</p>
     <p>Eventually, using a well known, and also undiclosed method, I gained access to the MobileConfiguration directory on my iPad Air 2 (iPad5,3_9.2.1_13D20). And I started messing with various files, making sure to set the <code>"CheckOutWhenRemoved"</code> and <code>"ProfileWasLocked"</code> parameters to False. And after that, I could manually delete it with ease. Without tripping any wires.</p>
     <p>I am currently writing scripts, to eventually turn into an application to automate this process. Can't give an ETA yet. I'll update this page with any news I may find.</p>
-
+	
+	<h4>Mon. Mar 21, 2016:</h4>
+	<p>The Apple event's finally here. After months of beta. And a lot of shit's going down today.</p>
+	<p>Supposedly, if enMTW isn't a fraud, he's gonna release his 9.3 jailbreak today, if 9.3's released today. If he does, I'm gonna add a framework, and an option to just change the files on a rooted/jailbroken device, instead of restoring. Also, I'm looking towards the 9.3 betas, so see if there's a way I can prevent the Apple Education protocol to be implemented on 9.3.</p>
+	<p>As for the LSMDM_pwn app itself, I'm using a mix of swift to handle the ViewControllers, but c and objective-c to execute several exploits needed to get access to the MobileConfiguration directory. Sadly, this means it'll be mac only for now. Unless someone wants to make a windows version. In which case, be my guest. Contact me.</p>
     <hr> <!-- End Entries -->
 
-    <h4><code>/MobileConfiguration/</code> Filesystem (As it is on my iPad.)</h4>
+    <h4 id="filesystem"><code>/MobileConfiguration/</code> Filesystem (As it is on my iPad.)</h4>
     <ul>
       <li><code>/PublicInfo/</code></li>
       <ul>
@@ -52,7 +57,7 @@
     </ul>
     <hr> <!-- End FileSystem -->
 
-    <h4>Downloads:</h4>
+    <h4 id="downloads">Downloads:</h4>
     <p>Mac: <u>Not available yet.</u></p>
     <p>Windows: <u>Not available yet.</u></p>
     <hr>
