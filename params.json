@@ -1,0 +1,6 @@
+{
+  "name": "Lsmdm pwn",
+  "tagline": "A program to escalate permissions on com.lsmdm.* (or whatever your MDM service is.)",
+  "body": "## Downloads\r\n\r\nMac: [Signup for beta](https://airtable.com/shrEw58UFR1MJjFKY\r\nWindows: Not Available yet\r\nLinux: ...but why would you do this?\r\n\r\n### Links\r\n\r\nOriginal Writeup: [Here](http://august712.me/lsmdm_pwn/write-up/)\r\n\r\n### Description ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
