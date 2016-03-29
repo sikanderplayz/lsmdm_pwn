@@ -13,7 +13,7 @@
 	<key>ConfigurationWasApplied</key>
 	<true/>
 	<key>IsMDMUnremovable</key>
-	<true/>
+	<false/>
 	<key>IsMandatory</key>
 	<true/>
 	<key>IsSupervised</key>
