@@ -31,7 +31,7 @@ while ! (./bin/afcclient deviceinfo | grep -q FSTotalBytes); do sleep 5; done 2>
 ### Actual Functions ###
 
 stage0() {
-echo "Please disable Find My iPhone. We are not responisible for any damage done to your iDevice."
+echo "Please disable Find My iPhone and your passcode. We are not responisible for any damage done to your iDevice."
 
 # Waiting for device
 wait_for_device
