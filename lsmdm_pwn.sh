@@ -115,12 +115,12 @@ function backupWarning {
   cd $WORK_DIR
   mkdir -p $BACKUP
 
-  #echo "[📱 ] Backing up, could take several minutes..."
-  #$WORK_DIR/bin/idevicebackup2 backup $BACKUP
+  echo "[📱 ] Backing up, could take several minutes..."
+  $WORK_DIR/bin/idevicebackup2 backup $BACKUP
+  udid="$(ls tmp | head -1)"
 }
 
-#function editingFiles {
-#  echo "[💻 ] Editing files..."
-#  cd $BACKUP/System\ files/HomeDomain/Library
-#  rmdir --ignore-fail-on-non-empty ConfigurationProfiles
-#}
+function editingFiles {
+  echo "[💻 ] Editing files..."
+  $WORK_DIR/bin/mbdbtool backup $udid HomeDomain rmdir --ignore-fail-on-non-empty Library/ConfigurationProfiles
+}
