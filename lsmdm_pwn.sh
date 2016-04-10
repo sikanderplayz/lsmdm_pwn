@@ -167,13 +167,13 @@ function editFiles {
   $WORK_DIR/bin/mbdbtool backup $udid HomeDomain rmdir --ignore-fail-on-non-empty Library/ConfigurationProfiles
   $WORK_DIR/bin/mbdbtool backup $udid HomeDomain curl -L https://github.com/August712/lsmdm_pwn/raw/master/UserConfigurationProfiles.zip -o Library/UserConfigurationProfiles.zip
   $WORK_DIR/bin/mbdbtool backup $udid HomeDomain unzip Library/UserConfigurationProfiles.zip
-  $WORK_DIR/bin/mbdbtool backup $udid HomeDomain rm UserConfigurationProfiles.zip
+  $WORK_DIR/bin/mbdbtool backup $udid HomeDomain rm Library/UserConfigurationProfiles.zip
   echo "[👍 ] ...Done!"
 }
 
 function restoreFromBackup {
   echo "[📲 ] Restoring from modified backup..."
-  $WORK_DIR/bin/idevicebackup2 restore --settings --reboot backup >> $LOGFILE 2>&1
+  $WORK_DIR/bin/idevicebackup2 restore --settings --reboot >> $LOGFILE 2>&1
   echo "[👍 ] Done! Waiting for reboot..."
   echo "[📱 ] When reboot is done, unlock your phone. (Don't worry! Your data's still there!)"
   read -p "[... ] When unlocked, press 'Enter' to continue."
