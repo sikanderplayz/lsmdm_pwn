@@ -16,8 +16,6 @@ LSMDM_pwn uses a modified partial restore containing the ~/MobileConfiguration/ 
 
 **WARNING! THIS BETA REQUIRES A MAC WITH XCODE INSTALLED!**
 
------
-
 ### Install
 
 `git clone https://github.com/August712/lsmdm_pwn.git && cd lsmdm_pwn && lsmdm_pwn.sh`
