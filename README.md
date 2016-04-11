@@ -2,7 +2,7 @@
 
 ## A program to eradicate MDM on an idevice running 9.0 or higher.
 
-> ### Pwn (Verb)
+> - Pwn (Verb)
 
 > Derived from the word "own" meaning "to make higher than another, to dominate"
 
@@ -12,11 +12,11 @@
 
 LSMDM_pwn removes Mobile Device Management (MDM) services from an iOS device. Since my school uses LightSpeed MDM Services (LSMDM) to tower over us all, I thought I would make the name a joke.
 
------
-
-Uses a modified partial restore containing the ~/MobileConfiguration/ directory.
+LSMDM_pwn uses a modified partial restore containing the ~/MobileConfiguration/ directory.
 
 **WARNING! THIS BETA REQUIRES A MAC WITH XCODE INSTALLED!**
+
+-----
 
 ### Install
 
