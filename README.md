@@ -1,6 +1,6 @@
-# LSMDM_pwn
+## LSMDM_pwn
 
-## A program to eradicate MDM on an idevice running 9.0 or higher.
+### A program to eradicate MDM on an idevice running 9.0 or higher.
 
 > - Pwn (Verb)
 
