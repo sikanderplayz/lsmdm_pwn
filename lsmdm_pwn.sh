@@ -1,6 +1,13 @@
+# -------------------------------------------------------------------------------------------------------- #
+#                                        LSMDM_pwn, by August712                                           #
+#                       A script to remove MDM services on a jailed iOS device.                            #
+#                       Tested with OS X 10.11.4, Xcode 7.3, iOS 9.2.1/9.3/9.3.1.                          #
+#              Thanks to: defying (for the script style) and qwertyoruiop (for compiling mdbdtool)         #
+# -------------------------------------------------------------------------------------------------------- #
+
 #!/bin/bash
 
- # Initial Vars #
+# Initial Vars #
 
 COMMAND=$1
 IOSDEPLOY="./bin/ios-deploy"
@@ -50,7 +57,7 @@ USAGE
 }
 
 function agreement {
-  read -p "[⛔️  ] By using LSMDM_pwn you hereby agree that I, Andrew 'August712' Augustine, will not be held responsible for any of the outcomes of you using it. In most cases, Companies / Schools have MDM on their devices so that they monitor the use of their tools and networks. If you are using this program, make sure that this device is your own, not your workplace's / school's. (Read the Acceptable Use Policy for that one, bud.)
+  read -p "[⛔️  ] By using LSMDM_pwn you hereby agree that I, Andrew 'August712' Augustine, will not be held responsible for any of the outcomes of you using it. In most cases, Companies / Schools have MDM on their devices so that they monitor the use of their tools and networks. If you are using this program, make sure that this device is your own, not your workplaces / schools. (Read the Acceptable Use Policy for that one, bud.)
 
   Also, at this point, if you understand, Make sure you have a working version of Xcode 7.0+ on your mac. Go ahead and turn Find my iPhone/iPad off, alongside your passcode. These are all neccecary requirements for this tool to work.
 
@@ -206,18 +213,18 @@ function wrapUp {
 
 case $1 in
 	pwn)
-    agreement
-	  getDependencies
+    		agreement
+		getDependencies
 		detectDevice
-    backupWarning
-    editFiles
-    restoreFromBackup
-    nowWeWait
-    wrapUp
-    exit 1
-		;;
+    		backupWarning
+    		editFiles
+    		restoreFromBackup
+    		nowWeWait
+    		wrapUp
+    		exit 1
+	;;
 	*)
 		usage
 		exit 1
-		;;
+	;;
 esac
