@@ -1,4 +1,3 @@
 language: objective-c
 osx_image: xcode7.3
 xcode_project: lsmdm_pwn/lsmdm_pwn.xcodeproj # path to your xcodeproj folder
-xcode_scheme: lsmdm_pwn
