@@ -1,4 +1,4 @@
-## LSMDM_pwn: A program to remove MDM on an idevice. [![Build Status](https://travis-ci.com/August712/lsmdm_pwn.svg?token=bsv8dgsduyALyTZm3brU&branch=master)](https://travis-ci.com/August712/lsmdm_pwn)
+## LSMDM_pwn: A program to remove MDM on an idevice. [![Build Status](https://travis-ci.org/August712/lsmdm_pwn.svg?branch=master)](https://travis-ci.org/August712/lsmdm_pwn)
 
 > - Pwn (Verb)
 
