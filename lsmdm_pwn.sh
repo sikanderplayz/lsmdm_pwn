@@ -57,11 +57,9 @@ USAGE
 }
 
 function agreement {
-  read -p "[⛔️  ] By using LSMDM_pwn you hereby agree that I, Andrew 'August712' Augustine, will not be held responsible for any of the outcomes of you using it. In most cases, Companies / Schools have MDM on their devices so that they monitor the use of their tools and networks. If you are using this program, make sure that this device is your own, not your workplaces / schools. (Read the Acceptable Use Policy for that one, bud.)
-
-  Also, at this point, if you understand, Make sure you have a working version of Xcode 7.0+ on your mac. Go ahead and turn Find my iPhone/iPad off, alongside your passcode. These are all neccecary requirements for this tool to work.
-
-  [Press 'Enter' to continue, or click dat 'X' to cancel]"
+	echo "[⛔️  ] By using LSMDM_pwn you hereby agree that I, Andrew 'August712' Augustine, will not be held responsible for any of the outcomes of you using it. In most cases, Companies / Schools have MDM on their devices so that they monitor the use of their tools and networks. If you are using this program, make sure that this device is your own, not your workplaces / schools. (Read the Acceptable Use Policy for that one, bud.)
+	echo "Also, at this point, if you understand, Make sure you have a working version of Xcode 7.0+ on your mac. Go ahead and turn Find my iPhone/iPad off, alongside your passcode. These are all neccecary requirements for this tool to work.
+	read -p "[Press any key to continue, or click dat 'X' to cancel]"
 }
 
 function getDependencies {
@@ -222,6 +220,11 @@ case $1 in
     		nowWeWait
     		wrapUp
     		exit 1
+	;;
+	install)
+		case $2 in
+			installTorBrowser
+		esac
 	;;
 	*)
 		usage
